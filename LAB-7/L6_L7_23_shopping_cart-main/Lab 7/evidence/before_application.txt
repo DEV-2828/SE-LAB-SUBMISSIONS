@@ -1,0 +1,11 @@
+==== Running cart_total ====
+Enter cart as name:pricexqty CSV (e.g. pen:10x2,book:250x1): Traceback (most recent call last):
+  File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py", line 35, in <module>
+    main()
+    ~~~~^^
+  File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py", line 21, in main
+    result = cart_total(user_input)
+  File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py", line 7, in cart_total
+    name, rest = item.split(':')
+    ^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)

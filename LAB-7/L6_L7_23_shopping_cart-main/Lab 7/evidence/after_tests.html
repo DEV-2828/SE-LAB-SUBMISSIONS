@@ -1,0 +1,22 @@
+<!doctype html><meta charset="utf-8"><title>Step 6 - All tests pass after fixes</title>
+<style>body{margin:32px;background:#f4f6fa;color:#15243a;font:18px Arial}
+h1{font-size:28px;margin:0 0 12px} .meta{font-size:16px;margin-bottom:15px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #bbc6d4;
+border-radius:8px;padding:22px;font:16px/1.45 Consolas,monospace;margin:12px 0}
+small{font-size:15px;color:#41536c}</style>
+<h1>Step 6 - All tests pass after fixes</h1><div class="meta">Recorded subprocess output | exit code: 0</div>
+<small>Command</small><pre>python -m pytest test_shopping_cart.py -v --tb=short --color=no --hypothesis-show-statistics</pre>
+
+<small>Output excerpts; full unedited log supplied separately</small>
+<pre>collecting ... collected 3 items
+test_shopping_cart.py::test_cart_total_no_crash PASSED                   [ 33%]
+test_shopping_cart.py::test_promo_percent_no_crash PASSED                [ 66%]
+test_shopping_cart.py::test_delivery_zone_no_crash PASSED                [100%]
+
+[All three repository test functions are shown above.]
+
+    - 100 passing, 0 failing, and 0 invalid test cases
+    - 100 passing, 0 failing, and 0 invalid test cases
+    - 100 passing, 0 failing, and 0 invalid test cases
+
+============================== 3 passed in 0.49s ==============================</pre>

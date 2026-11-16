@@ -1,0 +1,22 @@
+LAB 7 - ORIGINAL REPOSITORY TESTS ONLY
+
+Fixed application: shopping_cart.py
+Completed original tests: test_shopping_cart.py
+Original unchanged files: original/
+Unchanged application with runnable original tests: before_fix/
+Report: ../../../DELIVERABLES/FUZZ_TESTING_PES2UG24CS152_LAB-7.pdf
+
+From this folder in PowerShell:
+  & '../../../.venv/Scripts/python.exe' shopping_cart.py
+  & '../../../.venv/Scripts/python.exe' -m pytest test_shopping_cart.py -v
+
+Expected after fixes: 3 passed.
+To see failures, enter before_fix/ and use:
+  & '../../../../.venv/Scripts/python.exe' shopping_cart.py
+  & '../../../../.venv/Scripts/python.exe' -m pytest test_shopping_cart.py -v
+
+Expected before fixes: 3 failed.
+Only the three original @given(st.text() | st.none()) tests are used.
+Their empty bodies have been filled with corresponding function calls.
+No additional tests or strategies are included.
+The original tests check absence of unhandled exceptions, not result values.

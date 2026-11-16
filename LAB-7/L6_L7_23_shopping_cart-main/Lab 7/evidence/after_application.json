@@ -1,0 +1,11 @@
+{
+  "stage": "after",
+  "command": [
+    "python",
+    "shopping_cart.py"
+  ],
+  "stdin": "bad\nOFF101\n5\n",
+  "exit_code": 0,
+  "stdout": "==== Running cart_total ====\nEnter cart as name:pricexqty CSV (e.g. pen:10x2,book:250x1): Cart Total: 0\n\n==== Running promo_percent ====\nEnter a promo code (e.g. OFF20): Discount Percent: 0\n\n==== Running delivery_zone ====\nEnter a 6 digit pincode (e.g. 560085): Delivery Zone: Unknown\n",
+  "stderr": ""
+}

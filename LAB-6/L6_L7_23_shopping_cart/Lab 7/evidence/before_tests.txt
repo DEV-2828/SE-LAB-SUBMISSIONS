@@ -1,0 +1,147 @@
+FFF                                                                      [100%]
+================================== FAILURES ===================================
+__________________________ test_cart_total_no_crash ___________________________
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\test_shopping_cart.py", line 6, in test_cart_total_no_crash
+  |     def test_cart_total_no_crash(s):
+  |                    ^^^
+  | ExceptionGroup: Hypothesis found 4 distinct failures. (4 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\test_shopping_cart.py", line 7, in test_cart_total_no_crash
+    |     cart_total(s)
+    |     ~~~~~~~~~~^^^
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py", line 9, in cart_total
+    |     total += int(price) * int(qty)
+    |              ~~~^^^^^^^
+    | ValueError: invalid literal for int() with base 10: ''
+    | Failing test case: test_cart_total_no_crash(
+    |     s=':x',
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\test_shopping_cart.py", line 7, in test_cart_total_no_crash
+    |     cart_total(s)
+    |     ~~~~~~~~~~^^^
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py", line 8, in cart_total
+    |     price, qty = rest.split('x')
+    |     ^^^^^^^^^^
+    | ValueError: not enough values to unpack (expected 2, got 1)
+    | Failing test case: test_cart_total_no_crash(
+    |     s=':',
+    | )
+    +---------------- 3 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\test_shopping_cart.py", line 7, in test_cart_total_no_crash
+    |     cart_total(s)
+    |     ~~~~~~~~~~^^^
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py", line 7, in cart_total
+    |     name, rest = item.split(':')
+    |     ^^^^^^^^^^
+    | ValueError: not enough values to unpack (expected 2, got 1)
+    | Failing test case: test_cart_total_no_crash(
+    |     s='',  # or any other generated value
+    | )
+    +---------------- 4 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\test_shopping_cart.py", line 7, in test_cart_total_no_crash
+    |     cart_total(s)
+    |     ~~~~~~~~~~^^^
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py", line 6, in cart_total
+    |     for item in cart.split(','):
+    |                 ^^^^^^^^^^
+    | AttributeError: 'NoneType' object has no attribute 'split'
+    | Failing test case: test_cart_total_no_crash(
+    |     s=None,  # or any other generated value
+    | )
+    +------------------------------------
+_________________________ test_promo_percent_no_crash _________________________
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\test_shopping_cart.py", line 11, in test_promo_percent_no_crash
+  |     def test_promo_percent_no_crash(s):
+  |                    ^^^
+  | ExceptionGroup: Hypothesis found 3 distinct failures. (3 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\test_shopping_cart.py", line 12, in test_promo_percent_no_crash
+    |     promo_percent(s)
+    |     ~~~~~~~~~~~~~^^^
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py", line 13, in promo_percent
+    |     return int(code.upper().split('OFF')[1])
+    | ValueError: invalid literal for int() with base 10: ''
+    | Failing test case: test_promo_percent_no_crash(
+    |     s='OFF',
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\test_shopping_cart.py", line 12, in test_promo_percent_no_crash
+    |     promo_percent(s)
+    |     ~~~~~~~~~~~~~^^^
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py", line 13, in promo_percent
+    |     return int(code.upper().split('OFF')[1])
+    |                ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+    | IndexError: list index out of range
+    | Failing test case: test_promo_percent_no_crash(
+    |     s='',  # or any other generated value
+    | )
+    +---------------- 3 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\test_shopping_cart.py", line 12, in test_promo_percent_no_crash
+    |     promo_percent(s)
+    |     ~~~~~~~~~~~~~^^^
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py", line 13, in promo_percent
+    |     return int(code.upper().split('OFF')[1])
+    |                ^^^^^^^^^^
+    | AttributeError: 'NoneType' object has no attribute 'upper'
+    | Failing test case: test_promo_percent_no_crash(
+    |     s=None,  # or any other generated value
+    | )
+    +------------------------------------
+_________________________ test_delivery_zone_no_crash _________________________
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\test_shopping_cart.py", line 16, in test_delivery_zone_no_crash
+  |     def test_delivery_zone_no_crash(s):
+  |                    ^^^
+  | ExceptionGroup: Hypothesis found 3 distinct failures. (3 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\test_shopping_cart.py", line 17, in test_delivery_zone_no_crash
+    |     delivery_zone(s)
+    |     ~~~~~~~~~~~~~^^^
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py", line 16, in delivery_zone
+    |     return ZONES[pincode[0]]
+    |            ~~~~~^^^^^^^^^^^^
+    | KeyError: '0'
+    | Failing test case: test_delivery_zone_no_crash(
+    |     s='0',
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\test_shopping_cart.py", line 17, in test_delivery_zone_no_crash
+    |     delivery_zone(s)
+    |     ~~~~~~~~~~~~~^^^
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py", line 16, in delivery_zone
+    |     return ZONES[pincode[0]]
+    |                  ~~~~~~~^^^
+    | IndexError: string index out of range
+    | Failing test case: test_delivery_zone_no_crash(
+    |     s='',
+    | )
+    +---------------- 3 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\test_shopping_cart.py", line 17, in test_delivery_zone_no_crash
+    |     delivery_zone(s)
+    |     ~~~~~~~~~~~~~^^^
+    |   File "C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py", line 16, in delivery_zone
+    |     return ZONES[pincode[0]]
+    |                  ~~~~~~~^^^
+    | TypeError: 'NoneType' object is not subscriptable
+    | Failing test case: test_delivery_zone_no_crash(
+    |     s=None,
+    | )
+    +------------------------------------
+=========================== short test summary info ===========================
+FAILED test_shopping_cart.py::test_cart_total_no_crash - ExceptionGroup: Hypo...
+FAILED test_shopping_cart.py::test_promo_percent_no_crash - ExceptionGroup: H...
+FAILED test_shopping_cart.py::test_delivery_zone_no_crash - ExceptionGroup: H...
+3 failed in 2.90s

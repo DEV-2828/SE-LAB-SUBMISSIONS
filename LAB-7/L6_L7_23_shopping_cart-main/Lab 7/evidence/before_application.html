@@ -1,0 +1,25 @@
+<!doctype html><meta charset="utf-8"><title>Step 2 - Original application</title>
+<style>body{margin:32px;background:#f4f6fa;color:#15243a;font:18px Arial}
+h1{font-size:28px;margin:0 0 12px} .meta{font-size:16px;margin-bottom:15px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #bbc6d4;
+border-radius:8px;padding:22px;font:16px/1.45 Consolas,monospace;margin:12px 0}
+small{font-size:15px;color:#41536c}</style>
+<h1>Step 2 - Original application</h1><div class="meta">Recorded subprocess output | exit code: 1</div>
+<small>Command</small><pre>python shopping_cart.py</pre>
+<small>Supplied standard input (one value per line)</small><pre>bad
+OFF101
+5
+</pre>
+<small>Captured stdout and stderr</small>
+<pre>==== Running cart_total ====
+Enter cart as name:pricexqty CSV (e.g. pen:10x2,book:250x1): Traceback (most recent call last):
+  File &quot;C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py&quot;, line 35, in &lt;module&gt;
+    main()
+    ~~~~^^
+  File &quot;C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py&quot;, line 21, in main
+    result = cart_total(user_input)
+  File &quot;C:\DEVOPAM\ENGINEERING\SEM-5\3_Software_engineering\SE_LAB\LAB-6-7\LAB_7\L6_L7_23_shopping_cart-main\Lab 7\before_fix\shopping_cart.py&quot;, line 7, in cart_total
+    name, rest = item.split(&#x27;:&#x27;)
+    ^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+</pre>

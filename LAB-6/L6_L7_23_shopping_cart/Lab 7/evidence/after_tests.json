@@ -1,0 +1,17 @@
+{
+  "stage": "after",
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "test_shopping_cart.py",
+    "-v",
+    "--tb=short",
+    "--color=no",
+    "--hypothesis-show-statistics"
+  ],
+  "stdin": null,
+  "exit_code": 0,
+  "stdout": "============================= test session starts =============================\nplatform win32 -- Python 3.14.7, pytest-9.2.0, pluggy-1.7.0 -- C:\\DEVOPAM\\ENGINEERING\\SEM-5\\3_Software_engineering\\SE_LAB\\LAB-6-7\\.venv\\Scripts\\python.exe\ncachedir: .pytest_cache\nhypothesis profile 'default'\nrootdir: C:\\DEVOPAM\\ENGINEERING\\SEM-5\\3_Software_engineering\\SE_LAB\\LAB-6-7\\LAB_7\\L6_L7_23_shopping_cart-main\\Lab 7\nplugins: hypothesis-6.170.15\ncollecting ... collected 3 items\n\ntest_shopping_cart.py::test_cart_total_no_crash PASSED                   [ 33%]\ntest_shopping_cart.py::test_promo_percent_no_crash PASSED                [ 66%]\ntest_shopping_cart.py::test_delivery_zone_no_crash PASSED                [100%]\n============================ Hypothesis Statistics ============================\n\ntest_shopping_cart.py::test_cart_total_no_crash:\n\n  - during generate phase (0.08 seconds):\n    - Typical runtimes: < 1ms, of which < 1ms in data generation\n    - 100 passing, 0 failing, and 0 invalid test cases\n\n  - Stopped because settings.max_examples=100\n\n\ntest_shopping_cart.py::test_promo_percent_no_crash:\n\n  - during generate phase (0.06 seconds):\n    - Typical runtimes: < 1ms, of which < 1ms in data generation\n    - 100 passing, 0 failing, and 0 invalid test cases\n\n  - Stopped because settings.max_examples=100\n\n\ntest_shopping_cart.py::test_delivery_zone_no_crash:\n\n  - during generate phase (0.07 seconds):\n    - Typical runtimes: < 1ms, of which < 1ms in data generation\n    - 100 passing, 0 failing, and 0 invalid test cases\n\n  - Stopped because settings.max_examples=100\n\n\n============================== 3 passed in 0.49s ==============================\n",
+  "stderr": ""
+}

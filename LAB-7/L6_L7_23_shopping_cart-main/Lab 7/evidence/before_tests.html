@@ -1,0 +1,35 @@
+<!doctype html><meta charset="utf-8"><title>Step 4 - Fuzz tests before fixes</title>
+<style>body{margin:32px;background:#f4f6fa;color:#15243a;font:18px Arial}
+h1{font-size:28px;margin:0 0 12px} .meta{font-size:16px;margin-bottom:15px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #bbc6d4;
+border-radius:8px;padding:22px;font:16px/1.45 Consolas,monospace;margin:12px 0}
+small{font-size:15px;color:#41536c}</style>
+<h1>Step 4 - Fuzz tests before fixes</h1><div class="meta">Recorded subprocess output | exit code: 1</div>
+<small>Command</small><pre>python -m pytest test_shopping_cart.py -q --tb=short --color=no</pre>
+
+<small>Output excerpts; full unedited log supplied separately</small>
+<pre>FFF                                                                      [100%]
+
+Function: cart_total
+    | AttributeError: &#x27;NoneType&#x27; object has no attribute &#x27;split&#x27;
+    | Failing test case: test_cart_total_no_crash(
+    |     s=None,  # or any other generated value
+    | )
+
+Function: promo_percent
+    | AttributeError: &#x27;NoneType&#x27; object has no attribute &#x27;upper&#x27;
+    | Failing test case: test_promo_percent_no_crash(
+    |     s=None,  # or any other generated value
+    | )
+
+Function: delivery_zone
+    | TypeError: &#x27;NoneType&#x27; object is not subscriptable
+    | Failing test case: test_delivery_zone_no_crash(
+    |     s=None,
+    | )
+
+=========================== short test summary info ===========================
+FAILED test_shopping_cart.py::test_cart_total_no_crash - ExceptionGroup: Hypo...
+FAILED test_shopping_cart.py::test_promo_percent_no_crash - ExceptionGroup: H...
+FAILED test_shopping_cart.py::test_delivery_zone_no_crash - ExceptionGroup: H...
+3 failed in 2.90s</pre>

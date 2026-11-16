@@ -1,0 +1,8 @@
+==== Running cart_total ====
+Enter cart as name:pricexqty CSV (e.g. pen:10x2,book:250x1): Cart Total: 270
+
+==== Running promo_percent ====
+Enter a promo code (e.g. OFF20): Discount Percent: 20
+
+==== Running delivery_zone ====
+Enter a 6 digit pincode (e.g. 560085): Delivery Zone: South
